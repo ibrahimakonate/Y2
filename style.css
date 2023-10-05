@@ -1,0 +1,37 @@
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family:'poppins', sans-serif;
+        font-size: 16px;
+        line-height: 1,5;
+        color:black;
+        background: white;
+    }
+.container{
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+    gap: 10px;
+}
+.item{
+    background: rgb(102, 158, 190);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: steelblue 1px solid;
+    
+}
+
+@media(max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
